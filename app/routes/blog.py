@@ -62,7 +62,6 @@ def delete_blog(
     if not blog:
         raise HTTPException(status_code=404, detail="Blog not found")
 
-    # 🔥 cek owner
     if blog.id_creator != user.id:
         raise HTTPException(status_code=403, detail="Not your blog")
 
