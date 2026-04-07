@@ -1,31 +1,81 @@
-# IPBD-Praktikum1
+# 🚀 IPBD Praktikum 2 - Backend API
 
-A project created with FastAPI CLI.
+Backend API sederhana untuk sistem blog menggunakan **FastAPI**, **PostgreSQL**, dan **Docker**.
+Project ini mencakup setup database, migration, dan struktur backend modular.
 
-## Quick Start
+---
 
-### Start the development server
+## 🧠 Tech Stack
 
-```bash
-uv run fastapi dev
+* ⚡ FastAPI
+* 🐘 PostgreSQL
+* 🐳 Docker & Docker Compose
+* 📦 SQLModel + SQLAlchemy
+* 🔄 Alembic (Database Migration)
+
+---
+
+## 📁 Struktur Project
+
+```
+backend/
+├── app/
+│   ├── core/          # Config & utilities
+│   ├── database/      # Session & model
+│   ├── dto/           # Schema request/response
+│   ├── routes/        # Endpoint API
+│   └── main.py        # Entry point
+├── migration/         # Alembic migration
+├── docker-compose.yaml
+├── Dockerfile
+├── requirements.txt
+└── pyproject.toml
 ```
 
-Visit http://localhost:8000
+---
 
-### Deploy to FastAPI Cloud
+## ⚙️ Cara Menjalankan Project
 
-> FastAPI Cloud is currently in private beta. Join the waitlist at https://fastapicloud.com
+### 1. Clone Repository
 
 ```bash
-uv run fastapi deploy
+git clone <repo-url>
+cd backend
 ```
 
-## Project Structure
+---
 
-- `main.py` - Your FastAPI application
-- `pyproject.toml` - Project dependencies
+### 2. Jalankan dengan Docker
 
-## Learn More
+```bash
+docker compose up -d --build
+```
 
-- [FastAPI Documentation](https://fastapi.tiangolo.com)
-- [FastAPI Cloud](https://fastapicloud.com)
+---
+
+### 3. Akses API
+
+Buka di browser:
+
+```
+http://localhost:8000/docs
+```
+
+---
+
+## 🗄️ Database Migration (Alembic)
+
+### 1. Generate Migration
+
+```bash
+alembic revision --autogenerate -m "init"
+```
+
+---
+
+### 2. Apply Migration
+
+```bash
+alembic upgrade head
+```
+
