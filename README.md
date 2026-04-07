@@ -1,17 +1,16 @@
-# 🚀 IPBD Praktikum 2 - Backend API
+# IPBD Praktikum 2 - Backend API
 
 Backend API sederhana untuk sistem blog menggunakan **FastAPI**, **PostgreSQL**, dan **Docker**.
-Project ini mencakup setup database, migration, dan struktur backend modular.
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
-* ⚡ FastAPI
-* 🐘 PostgreSQL
-* 🐳 Docker & Docker Compose
-* 📦 SQLModel + SQLAlchemy
-* 🔄 Alembic (Database Migration)
+*  FastAPI
+*  PostgreSQL
+*  Docker 
+*  SQLModel + SQLAlchemy
+*  Alembic (Database Migration)
 
 ---
 
