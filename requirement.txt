@@ -33,7 +33,6 @@ pyyaml==6.0.3
 rich==14.3.3
 rich-toolkit==0.19.7
 rignore==0.7.6
-sentry-sdk==2.57.0
 shellingham==1.5.4
 sqlalchemy==2.0.48
 sqlmodel==0.0.38
@@ -47,5 +46,5 @@ uvloop==0.22.1
 watchfiles==1.1.1
 websockets==16.0 
 python-jose[cryptography]
-passlib[bcrypt]
-bcrypt
+passlib[argon2]
+argon2-cffi
